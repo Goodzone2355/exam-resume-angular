@@ -1,0 +1,22 @@
+<div class="form__wrapper">
+    <div class="form__row">
+        <h3>Имя</h3>
+        <input type="text" placeholder="Введите своё имя" id="userName" #userName (keyup)="getName(userName.value)">
+    </div>
+
+    <div class="form__row">
+        <h3>Фамилия</h3>
+        <input type="text" placeholder="Введите свою фамилию" #userSurname (keyup)="getSurname(userSurname.value)">
+    </div>
+
+    <div class="form__row">
+        <h3>Должность</h3>
+        <input type="text" placeholder="Введите свою должность" #userJob (keyup)="getJob(userJob.value)">
+    </div>
+
+    <div class="form__row">
+        <button><a routerLink="/resume" [state]=data>Отправить</a></button>
+    </div>
+
+
+</div>
